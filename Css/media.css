@@ -1,0 +1,149 @@
+/* Mobile and middle size tablets */
+@media (min-width: 270px) and (max-width: 850px){
+
+    .nav-items{
+        display: none;
+    }
+
+    .nav-container{
+        position: relative;
+        padding: 3rem 3rem;
+    }
+
+    .nav-container .menu-icon{
+        display: block;
+        color: white;
+        font-size: 3rem;
+        position: absolute;
+        top: 2.5rem;
+        right: 3rem;
+    }
+
+    .logo img{
+        max-width: 5rem;
+    }
+
+    #home{
+        padding: 2rem 0rem;
+    }
+
+    .home-container{
+        padding: 0rem;
+        flex-direction: column-reverse;
+    }
+
+    .home-container .left{
+        width: 100%;
+        text-align: center;
+        padding: 5rem 2rem;
+    }
+
+    .left h3{
+        font-size: 2rem;
+    }
+
+    .left h1{
+        font-size: 3rem;
+    }
+
+    .media-icons a i{
+        margin: 0 1rem;
+        font-size: 2rem;
+    }
+
+    .home-container .right{
+        width: 100%;
+    }
+
+    .right img{
+        width: 25rem;
+    }
+
+    #skills{
+        padding: 2rem 2rem;
+        width: 100%;
+    }
+
+    .skills-container h2{
+        font-size: 3rem;
+    }
+
+    .lang h3{
+        font-size: 2rem;
+    }
+
+    .skill .skill-name{
+        font-size: 1.5rem;
+    }
+
+    .skill .skill-bar{
+        width: 90%;
+    }
+
+    .skill{
+        padding: 0 2rem;
+    }
+    
+
+}
+
+
+
+
+/* Large size tablets and middle desktops */
+@media (min-width: 850px) and (max-width: 1272px){
+
+    #home{
+        padding: 2rem 0;
+    }
+
+    .home-container{
+        padding: 3rem 0rem;
+    }
+
+    .home-container .left{
+        padding: 5rem 0 5rem 15rem;
+    }
+
+    .left h3{
+        font-size: 2rem;
+    }
+
+    .left h1{
+        font-size: 4rem;
+    }
+
+    .left .btn{
+        font-size: 2rem;
+    }
+
+    .right img{
+        width: 25rem;
+    }
+
+    #skills{
+        padding: 2rem 10rem;
+    }
+
+}
+
+
+
+@media (min-width: 1900px){
+    .nav-container{
+        max-width: 160rem;
+        margin: 0 auto;
+    }
+    
+    /* .home-container{
+        max-width: 160rem;
+        margin: 10rem auto;
+    } */
+    
+    .content-container{
+        max-width: 160rem;
+        margin: 0 auto;
+    }
+
+
+}
