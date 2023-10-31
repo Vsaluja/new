@@ -5,9 +5,27 @@
         display: none;
     }
 
+    .active-nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0;
+        width: 100%;
+    }
+
+    .active-nav a{
+        margin: 1rem 0;
+        animation: none;
+        opacity: 1;
+    }
+    
+
     .nav-container{
         position: relative;
         padding: 3rem 3rem;
+        flex-direction: column;
+        align-items: start;
     }
 
     .nav-container .menu-icon{
@@ -17,6 +35,15 @@
         position: absolute;
         top: 2.5rem;
         right: 3rem;
+    }
+    
+    .nav-container .inactive-menu-icon{
+        display: none;
+    }
+
+    .theme{
+        top: 23rem;
+        right: 5px;
     }
 
     .logo img{
@@ -35,7 +62,7 @@
     .home-container .left{
         width: 100%;
         text-align: center;
-        padding: 5rem 2rem;
+        padding: 4rem 2rem;
     }
 
     .left h3{
@@ -51,12 +78,17 @@
         font-size: 2rem;
     }
 
+    .left .btn{
+        font-size: 1.7rem;
+    }
+
     .home-container .right{
         width: 100%;
+        padding: 2rem 0;
     }
 
     .right img{
-        width: 25rem;
+        width: 20rem;
     }
 
     #skills{
