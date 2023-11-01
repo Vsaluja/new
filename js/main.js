@@ -20,14 +20,14 @@ function displayNav(){
             
             navItems.classList.toggle('active-nav');
             
-            if(menuIcon[0].classList.contains('inactive-menu-icon')){
-                menuIcon[0].classList.remove('inactive-menu-icon');   
-                menuIcon[1].classList.add('inactive-menu-icon');
-            }
-            else{
-                menuIcon[1].classList.remove('inactive-menu-icon');
-                menuIcon[0].classList.add('inactive-menu-icon');
-            }
+            // if(menuIcon[0].classList.contains('inactive-menu-icon')){
+            //     menuIcon[0].classList.remove('inactive-menu-icon');   
+            //     menuIcon[1].classList.add('inactive-menu-icon');
+            // }
+            // else{
+            //     menuIcon[1].classList.remove('inactive-menu-icon');
+            //     menuIcon[0].classList.add('inactive-menu-icon');
+            // }
 
         })
         
@@ -51,11 +51,11 @@ function navHighlight(){
             document.querySelector('.active-item').classList.remove('active-item');
             value.classList.add('active-item');
 
-            menuIcon.forEach((element)=>{
-                document.querySelector('.inactive-menu-icon').classList.remove('inactive-menu-icon');
-                // Means when we open the menu box then click on anchor tag then obv the bars are hidden and the X is being displayed so whenever we click on anchor tag in menu bar remove the inactive class from bars and add the inactive class to X
-                menuIcon[1].classList.add('inactive-menu-icon');
-            })
+            // menuIcon.forEach((element)=>{
+            //     document.querySelector('.inactive-menu-icon').classList.remove('inactive-menu-icon');
+            //     // Means when we open the menu box then click on anchor tag then obv the bars are hidden and the X is being displayed so whenever we click on anchor tag in menu bar remove the inactive class from bars and add the inactive class to X
+            //     menuIcon[1].classList.add('inactive-menu-icon');
+            // })
 
         })
 

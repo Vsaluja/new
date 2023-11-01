@@ -278,7 +278,7 @@ body {
     border-radius: 7px;
     padding: 1rem 1rem;
     text-align: center;
-    width: 90%;
+    /* width: 90%; */
 }
 
 .timeline-container{
@@ -289,7 +289,7 @@ body {
 
 .vertical-line{
     position: absolute;
-    top: 6rem;
+    top: 3rem;
     left: 49.5%;
     width: 0.5rem;
     height: 75%;
