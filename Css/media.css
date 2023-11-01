@@ -160,7 +160,11 @@
 
 }
 
-
+@media (min-width: 480px) and (max-width: 850px){
+    .home-container{
+        margin: 20rem 0;
+    }
+}
 
 
 /* Large size tablets and middle desktops */
