@@ -265,6 +265,7 @@ body {
     top: 3rem;
     right: -20px;
     z-index: 2;
+    box-shadow: 0px 5px 20px black;
 }
 
 .timeline-right-container img{
@@ -279,6 +280,7 @@ body {
     padding: 1rem 1rem;
     text-align: center;
     /* width: 90%; */
+    box-shadow: 0px 5px 20px black;
 }
 
 .timeline-container{
