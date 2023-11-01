@@ -18,7 +18,7 @@ function displayNav(){
         
         value.addEventListener('click', ()=>{
             
-                    navItems.classList.toggle('active-nav');
+            navItems.classList.toggle('active-nav');
             
             if(menuIcon[0].classList.contains('inactive-menu-icon')){
                 menuIcon[0].classList.remove('inactive-menu-icon');   
@@ -99,13 +99,14 @@ function changeBackground(){
     
     let blue = rootStyles.getPropertyValue('--blue-color');
 
-
+    let navItems = document.querySelector('.nav-items');
     
-
+    
     
     darkBtn.addEventListener('click', ()=>{
         
-        
+        // Closes the nav menu when clicking on the change theme button
+        navItems.classList.toggle('active-nav');
 
         if(blue == "#00ABF0"){
             root.style.setProperty('--blue-color', "crimson");

@@ -91,6 +91,47 @@
         width: 20rem;
     }
 
+    /* About section */
+
+    #about{
+        padding: 2rem 2rem;
+        width: 100%;
+    }
+    #about h2{
+        font-size: 3rem;
+    }
+
+    .about-container{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .about-container .about-left{
+        width: 100%;
+    }
+
+    .timeline-container{
+        left: 10%;
+        width: 80%;
+    }
+
+    .timeline-container img{
+        left: -20px;
+    }
+
+    .vertical-line{
+        left: 10%;
+        height: 75%;
+    }
+
+    .about-container .about-right{
+        width: 100%;
+    }
+
+
+    /* Skills section */
+
     #skills{
         padding: 2rem 2rem;
         width: 100%;
@@ -153,11 +194,16 @@
         width: 25rem;
     }
 
+    #about{
+        padding: 2rem 10rem;
+    }
+
     #skills{
         padding: 2rem 10rem;
     }
 
 }
+
 
 
 
