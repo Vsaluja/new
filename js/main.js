@@ -73,12 +73,12 @@ function animateOnScroll(){
         
         let skillsPosition = skillsElement.getBoundingClientRect().top;
         
-        let screenPos = pageYOffset;
+        let screenPos = window.innerHeight;
         
         skillInsideBar.forEach((value)=>{
             
             value.style.opacity = "1";
-            if(screenPos > skillsPosition){
+            if(screenPos > skillsPosition+400){
                 value.style.animation = "toRight 3s ease-in-out forwards"
             }
             else{
