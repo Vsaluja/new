@@ -12,6 +12,7 @@
         align-items: center;
         margin: 2rem 0;
         width: 100%;
+        position: relative;
     }
 
     .active-nav a{
@@ -42,8 +43,9 @@
     }
 
     .theme{
-        top: 23rem;
-        right: 5px;
+        position: absolute;
+        bottom: -4rem;
+        right: 0px;
     }
 
     .logo img{
@@ -91,10 +93,14 @@
         width: 20rem;
     }
 
+    #boundary{
+        padding: 0 2rem;
+    }
+
     /* About section */
 
     #about{
-        padding: 2rem 2rem;
+        padding: 2rem 0rem;
         width: 100%;
     }
     #about h2{
@@ -122,6 +128,7 @@
 
     .timeline-container .timeline-text-box{
         /* width: 60%; */
+        font-size: 1rem;
     }
 
     .vertical-line{
@@ -137,7 +144,7 @@
     /* Skills section */
 
     #skills{
-        padding: 2rem 2rem;
+        padding: 2rem 0rem;
         width: 100%;
     }
 
@@ -169,17 +176,91 @@
     }
 
 
+    .projects-container  h2{
+        font-size: 3rem;
+    }
+
+
+    .project  h2{
+        font-size: 1.8rem;
+    }
+
+    .project img{
+        max-width: 250px;
+    }
+
+    .project .tags{
+        max-width: 250px;
+    }
+
+    .project .tags span{
+        font-size: 0.8rem;
+    }
+
+    .project .links{
+        font-size: 1.3rem;
+        gap: 2rem
+    }
+
+    .projects-container .projects-inner-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 7rem;
+    }
+
+
 }
 
 @media (min-width: 480px) and (max-width: 850px){
     .home-container{
         margin: 20rem 0;
     }
+
+    .timeline-container{
+        left: 20%;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    #boundary{
+        padding: 2rem;
+    }
+
+    .project h2{
+        font-size: 1.8rem;
+    }
+
+    .project img{
+        max-width: 200px;
+    }
+
+    .project .tags{
+        max-width: 200px;
+    }
+
+    .project .tags span{
+        font-size: 0.7rem;
+    }
+
+    .project .links{
+        font-size: 1.3rem;
+        gap: 2rem
+    }
+
+
+    .projects-container .projects-inner-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 7rem;
+    }
+
 }
 
 
 /* Large size tablets and middle desktops */
-@media (min-width: 850px) and (max-width: 1272px){
+@media (min-width: 850px) and (max-width: 1400px){
 
     #home{
         padding: 2rem 0;
@@ -209,12 +290,16 @@
         width: 25rem;
     }
 
-    #about{
-        padding: 2rem 10rem;
+    #boundary{
+        padding: 0 5rem;
     }
 
-    #skills{
-        padding: 2rem 10rem;
+    .project img{
+        max-width: 300px;
+    }
+
+    .project .tags{
+        max-width: 300px;
     }
 
 }

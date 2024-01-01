@@ -219,10 +219,16 @@ body {
     animation-delay: 1.5s, 2.5s;
 }
 
+/* Boundary container */
+
+#boundary{
+    padding: 0 20rem;
+}
+
 /* About section */
 
 #about{
-    padding: 2rem 25rem;
+    padding: 2rem;
     width: 100%;
     margin-bottom: 5rem;
 }
@@ -277,6 +283,7 @@ body {
 
 .timeline-container .timeline-text-box{
     background-color: white;
+    font-size: 1.4rem;
     position: relative;
     border-radius: 7px;
     padding: 1rem 1rem;
@@ -317,7 +324,7 @@ body {
 
 .about-right p{
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: white;
 }
 
@@ -353,7 +360,7 @@ body {
 /* Skills section*/
 
 #skills{
-    padding: 2rem 25rem;
+    padding: 2rem;
     width: 100%;
 }
 
@@ -446,9 +453,115 @@ body {
     max-width: 12rem;
     height: 8rem;
     border-radius: 7px;
-    margin: 5rem 2rem;
+    margin: 2rem;
 }
 
+#projects{
+    padding: 2rem 0rem;
+    width: 100%;
+}
+
+
+.projects-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20rem;
+}
+
+.projects-container h2{
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 8rem;
+    padding-bottom: 3rem;
+    margin-bottom: 4rem;
+    color: white;
+    border-bottom: 2px solid var(--blue-color);
+}
+
+.projects-container .projects-inner-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    padding: 0 20px;
+    gap: 5rem;
+}
+
+.projects-inner-container .project{
+    color: white;
+    padding: 5px 10px;
+    background-color: #08131C;
+    box-shadow: 0px 5px 20px var(--blue-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    gap: 1rem;
+}
+
+.project img{
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.project h2{
+    font-size: 2rem;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.project p{
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.project .tags{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    gap: 5px;
+}
+
+.project .tags span{
+    font-size: 1rem;
+    padding: 5px 10px;
+    background-color: var(--blue-color);
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.project .links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    font-size: 1.5rem;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+
+.links .live, .source{
+    padding: 4px 20px;
+    border: 1px solid var(--blue-color);
+    border-radius: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--blue-color);
+    font-weight: 600;
+}
+
+.links .live:hover, .source:hover{
+    background-color: var(--blue-color);
+    transition: 0.4s;
+    box-shadow: none;
+    color: white;
+}
 
 
 /* Footer */
