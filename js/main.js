@@ -1,4 +1,4 @@
-function displayNav(){
+function displayNav() {
 
     let menuIcon = document.querySelectorAll('.menu-icon');
     let navItems = document.querySelector('.nav-items');
@@ -8,18 +8,18 @@ function displayNav(){
     //         navItems.classList.toggle('active-nav');
     //         document.querySelector('.inactive-menu-icon').classList.remove('inactive-menu-icon');
     //         value.classList.add('inactive-menu-icon');
-    
+
     //     })
     // })
-    
+
     // or
-    
-    menuIcon.forEach((value)=>{
-        
-        value.addEventListener('click', ()=>{
-            
+
+    menuIcon.forEach((value) => {
+
+        value.addEventListener('click', () => {
+
             navItems.classList.toggle('active-nav');
-            
+
             // if(menuIcon[0].classList.contains('inactive-menu-icon')){
             //     menuIcon[0].classList.remove('inactive-menu-icon');   
             //     menuIcon[1].classList.add('inactive-menu-icon');
@@ -30,24 +30,24 @@ function displayNav(){
             // }
 
         })
-        
-    })    
+
+    })
 
 
 
 }
 
-function navHighlight(){
+function navHighlight() {
 
     let anchorNavItems = document.querySelectorAll('.nav-items>a');
     let navItems = document.querySelector('.nav-items');
     let menuIcon = document.querySelectorAll('.menu-icon');
 
-    anchorNavItems.forEach((value)=>{
-        
-        value.addEventListener('click', ()=>{
+    anchorNavItems.forEach((value) => {
+
+        value.addEventListener('click', () => {
             navItems.classList.toggle('active-nav');
-            
+
             document.querySelector('.active-item').classList.remove('active-item');
             value.classList.add('active-item');
 
@@ -63,25 +63,25 @@ function navHighlight(){
 
 }
 
-function animateOnScroll(){
+function animateOnScroll() {
 
-    window.addEventListener('scroll', ()=>{
-        
+    window.addEventListener('scroll', () => {
+
         let skillsElement = document.getElementById('skills');
-        
+
         let skillInsideBar = document.querySelectorAll('.skill-inside-bar');
-        
+
         let skillsPosition = skillsElement.getBoundingClientRect().top;
-        
+
         let screenPos = window.innerHeight;
-        
-        skillInsideBar.forEach((value)=>{
-            
+
+        skillInsideBar.forEach((value) => {
+
             value.style.opacity = "1";
-            if(screenPos > skillsPosition+400){
+            if (screenPos > skillsPosition + 400) {
                 value.style.animation = "toRight 3s ease-in-out forwards"
             }
-            else{
+            else {
                 value.style.animation = "none";
             }
         })
@@ -90,43 +90,43 @@ function animateOnScroll(){
 
 }
 
-function changeBackground(){
+function changeBackground() {
     let darkBtn = document.querySelector('.theme');
 
     let root = document.querySelector(':root');
 
     let rootStyles = getComputedStyle(root);
-    
+
     let blue = rootStyles.getPropertyValue('--blue-color');
 
     let navItems = document.querySelector('.nav-items');
-    
-    
-    
-    darkBtn.addEventListener('click', ()=>{
-        
+
+
+
+    darkBtn.addEventListener('click', () => {
+
         // Closes the nav menu when clicking on the change theme button
         navItems.classList.toggle('active-nav');
 
-        if(blue == "#00ABF0"){
+        if (blue == "#00ABF0") {
             root.style.setProperty('--blue-color', "crimson");
             darkBtn.style.color = "#00ABF0";
             blue = rootStyles.getPropertyValue('--blue-color');
         }
-        else{
+        else {
             root.style.setProperty('--blue-color', "#00ABF0");
             darkBtn.style.color = "crimson";
             blue = rootStyles.getPropertyValue('--blue-color');
         }
-        
 
-        
+
+
     })
 
 }
 
-function main(){
-    
+function main() {
+
     displayNav();
 
     navHighlight();
